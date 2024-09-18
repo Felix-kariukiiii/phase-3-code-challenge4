@@ -1,0 +1,45 @@
+## Concert Management System
+# Project Description
+The Concert Management System is a Python-based application that utilizes SQLite to manage and track concerts for various bands and venues. The system allows users to add new bands, venues, and concerts while retrieving relevant information about bands and venues through SQL queries. This project showcases the application of object-relational methods and SQL queries to model real-world relationships between bands, venues, and concerts.
+
+# Topics Covered
+1. SQL & Databases: Using raw SQL for querying a SQLite database to manage relationships between bands, venues, and concerts.
+2. Object-Relational Mapping (ORM): Establishing relationships between objects in Python code and their database representations.
+3. SQL Operations: Implementing complex SQL queries using JOIN, GROUP BY, and COUNT to retrieve and analyze data.
+
+# Project Overview
+This system models a concert management scenario where:
+
+A Concert belongs to a Band and a Venue.
+A Band can play multiple concerts at different venues.
+A Venue can host multiple concerts by various bands.
+
+# Features
+1. Add bands and venues to the system.
+2. Schedule concerts by associating a band with a venue on a specific date.
+3. Retrieve information such as:
+       All concerts for a particular band or venue.
+       All bands that have performed at a venue.
+       Whether a concert is a "hometown show" (i.e., if the concert takes place in the band's hometown).
+       The most frequent band at a venue.
+       The band that has performed the most concerts.
+
+# SQL Operations Covered
+Creating tables with appropriate relationships (Concert, Band, Venue).
+Inserting data into tables.
+Fetching data using SQL JOIN, GROUP BY, and aggregate functions like COUNT.
+Utilizing conditional SQL logic for methods like determining if a concert is a hometown show.
+
+# Project Objective
+The primary objective of the project is to demonstrate the use of SQL in a Python environment to manage real-world relationships between entities. This project also serves to:
+
+Show how SQL queries can model complex relationships between multiple tables.
+Help users understand the relationship between raw SQL queries and Python code for building scalable applications.
+Create a simple concert management tool that can be expanded upon for larger music event management systems.
+
+# How to Run
+1. Clone the repository to your local environment.
+2. Ensure you have Python 3 installed.
+3. Install SQLite (if not pre-installed).
+4. Set up the database by running the create_tables.py script to create the necessary tables.
+5. Use the test.py file to add sample data and execute various functions of the system.
